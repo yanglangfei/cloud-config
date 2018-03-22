@@ -11,8 +11,6 @@ info:
     artifact: "@project.artifactId@"
     version: "@project.version@"
 
-
-
 spring:
   boot:
     admin:
