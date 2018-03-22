@@ -5,9 +5,9 @@ eureka:
 
 info:
   build:
-    name: @project.name@
-    description: @project.description@
-    groupId: @project.groupId@
-    artifact: @project.artifactId@
-    version: @project.version@
+    name: ${project.name}
+    description: ${project.description}
+    groupId: ${project.groupId}
+    artifact: ${project.artifactId}
+    version: ${project.version}
 
