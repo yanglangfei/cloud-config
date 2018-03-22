@@ -7,8 +7,8 @@ eureka:
 spring:
   boot:
     admin:
-      client:
-        prefer-ip: true   # 解决windows下运行时无法识别主机名的问题
+      #client:
+       # prefer-ip: true   # 解决windows下运行时无法识别主机名的问题
       url: http://localhost:8855   # 向服务端注册的地址
 management:
   security:
