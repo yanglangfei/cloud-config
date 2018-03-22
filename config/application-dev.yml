@@ -3,13 +3,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:1001/eureka/
 
-info:
-  build:
-    name: "@project.name@"
-    description: "@project.description@"
-    groupId: "@project.groupId@"
-    artifact: "@project.artifactId@"
-    version: "@project.version@"
 
 spring:
   boot:
