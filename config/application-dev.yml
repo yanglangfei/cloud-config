@@ -11,15 +11,6 @@ info:
     artifact: "@project.artifactId@"
     version: "@project.version@"
 
-
-spring:
-  boot:
-    admin:
-      url: http://localhost:8855
-management:
-  security:
-    enabled: false
-
 #spring:
 #  boot:
  #   admin:
