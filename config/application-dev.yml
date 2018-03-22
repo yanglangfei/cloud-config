@@ -20,3 +20,7 @@ info: #定义各种额外的详情给服务端显示
     version: "@project.version@"
     spring-boot-version: "@project.parent.version@"
 
+
+logging:
+  file: D:\Logs\com\config.log
+
