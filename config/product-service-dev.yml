@@ -1,2 +1,3 @@
 define:
   product: product-service:eggs-V001
+  auther: user-service:pro
