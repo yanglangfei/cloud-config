@@ -13,7 +13,7 @@ eureka:
 #zipkin 配置
 spring:
   rabbitmq:
-    host: 192.168.1.139
+    host: localhost
     port: 5672
     username: admin
     password: 111111
