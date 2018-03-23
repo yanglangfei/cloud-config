@@ -1,22 +1,31 @@
+#全局 注册中心配置
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+   #ip 显示
   instance:
     preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    health-check-url-path: /health
+    #ip-address: localhost
 
-
+#zipkin 配置
 spring:
+  zipkin:
+    base-url: http://localhost:1158
+  # spring boot admin 监控地址配置
   boot:
     admin:
-      #client:
-       # prefer-ip: true   # 解决windows下运行时无法识别主机名的问题
+      client:
+        prefer-ip: true   # 解决windows下运行时无法识别主机名的问题
       url: http://localhost:8855   # 向服务端注册的地址
 management:
   security:
     enabled: false # spring-boot 1.5.2之后严格执行安全策略，所以需要配置这个为false
 
 
+#log 配置
 logging:
   file: D:\Logs\com\config.log
 
