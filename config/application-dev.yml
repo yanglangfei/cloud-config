@@ -12,6 +12,11 @@ eureka:
 
 #zipkin 配置
 spring:
+  rabbitmq:
+    host: 192.168.1.139
+    port: 15672
+    username: guest
+    password: guest
   zipkin:
     base-url: http://localhost:1158
   # spring boot admin 监控地址配置
