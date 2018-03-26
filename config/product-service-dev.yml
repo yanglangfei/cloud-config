@@ -1,4 +1,8 @@
 define:
+  push:
+    jpush:
+      app_key: 111111
+
   product: product-service:eggs-V001
   auther: user-service:pro
   #主从库配置
