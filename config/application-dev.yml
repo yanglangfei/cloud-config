@@ -43,7 +43,14 @@ define:
     username: admin
     password: 111111
   mysql:
-    write:
+    write1:
+      url: jdbc:mysql://192.168.1.189:3306/lwSql?useUnicode=true&characterEncoding=UTF-8
+      #url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
+      #username: jucaipen
+      username: master
+      password: 111111
+      #password: jucaipen168
+    write2:
       url: jdbc:mysql://192.168.1.189:3306/lwSql?useUnicode=true&characterEncoding=UTF-8
       #url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
       #username: jucaipen
@@ -51,6 +58,13 @@ define:
       password: 111111
       #password: jucaipen168
     read1:
+      url: jdbc:mysql://192.168.1.189:3306/lwSql?useUnicode=true&characterEncoding=UTF-8
+      #url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
+      #username: jucaipen
+      username: reader
+      password: 123456
+      #password: jucaipen168
+    read2:
       url: jdbc:mysql://192.168.1.189:3306/lwSql?useUnicode=true&characterEncoding=UTF-8
       #url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
       #username: jucaipen
