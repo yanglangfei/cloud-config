@@ -51,12 +51,12 @@ define:
       password: root
       #password: jucaipen168
     read1:
-      url: jdbc:mysql://192.168.1.189:3306/lwSql?useUnicode=true&characterEncoding=UTF-8
-      #url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
-      #username: jucaipen
-      username: root
-      password: root
-      #password: jucaipen168
+      #url: jdbc:mysql://192.168.1.189:3306/lwSql?useUnicode=true&characterEncoding=UTF-8
+      url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
+      username: jucaipen
+      #username: root
+      #password: root
+      password: jucaipen168
   paging:
     defaultSize: 15      #默认分页大小
     defaultNum: 1
