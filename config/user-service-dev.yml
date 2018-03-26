@@ -1,6 +1,6 @@
 define:
   auther: user-service:ylf
-  #主从库配置
+  # mysql 主从库配置
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     write:
@@ -43,3 +43,38 @@ define:
       filters: stat,wall,log4j # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 #通过connectProperties属性来打开mergeSql功能；慢SQL记录
       useGlobalDataSourceStat: true
+    read2:
+      driverClassName: com.mysql.jdbc.Driver
+      url: ${define.mysql.read2.url}
+      username: ${define.mysql.read2.username}
+      password: ${define.mysql.read2.password}
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1 FROM DUAL
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      filters: stat,wall,log4j # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 #通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      useGlobalDataSourceStat: true
+
+
+# redis 哨兵模式配置
+spring:
+  redis:
+    database: 0
+    password: 111111
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
+    sentinel:
+      master: mymaster
+      nodes: 192.168.12.194:26379,192.168.12.194:36379,192.168.12.194:46379
