@@ -44,13 +44,13 @@ define:
     password: 111111
   mysql:
     write:
-      url: jdbc:mysql://192.168.1.139:3306/naju2_dev?useUnicode=true&characterEncoding=utf8
-      username: naju2_master
-      password: 111111
+      url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
+      username: jucaipen
+      password: jucaipen168
     read1:
-      url: jdbc:mysql://192.168.1.139:3306/naju2_dev?useUnicode=true&characterEncoding=utf8
-      username: naju2_slave
-      password: 111111
+      url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
+      username: jucaipen
+      password: jucaipen168
   paging:
     defaultSize: 15      #默认分页大小
     defaultNum: 1
