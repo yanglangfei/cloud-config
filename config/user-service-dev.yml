@@ -69,12 +69,12 @@ define:
 spring:
   redis:
     database: 0
-    password: 111111
+    password: admin
     pool:
       max-idle: 8
       min-idle: 0
       max-active: 8
       max-wait: -1
     sentinel:
-      master: mymaster
-      nodes: 192.168.12.194:26379,192.168.12.194:36379,192.168.12.194:46379
+      master: master
+      nodes: 192.168.1.139:26379,192.168.1.139:36379,192.168.1.139:46379
