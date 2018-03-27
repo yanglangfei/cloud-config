@@ -70,7 +70,7 @@ spring:
   redis:
     database: 0   # Redis数据库索引（默认为0）
     host: 127.0.0.1
-    password: admin123
+    password: admin
     port: 6379
 #################redis线程池设置#################
     jedis:
