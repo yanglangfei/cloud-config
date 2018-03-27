@@ -1,5 +1,5 @@
 define:
-  auther: user-service:ylf--V1.0
+  auther: user-service:ylf--V1.112
   # mysql 主从库配置
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
