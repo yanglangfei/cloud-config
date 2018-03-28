@@ -1,4 +1,8 @@
 define:
+  push:
+    jpush:
+      app_key: 111111
+
   auther: user-service:ylf--V1.112
   # mysql 主从库配置
   datasource:
