@@ -3,11 +3,11 @@ define:
   # mysql 主从库配置
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    write1:
+    write:
       driverClassName: com.mysql.jdbc.Driver
-      url: ${define.mysql.write1.url}
-      username: ${define.mysql.write1.username}
-      password: ${define.mysql.write1.password}
+      url: ${define.mysql.write.url}
+      username: ${define.mysql.write.username}
+      password: ${define.mysql.write.password}
       initialSize: 5
       minIdle: 5
       maxActive: 20

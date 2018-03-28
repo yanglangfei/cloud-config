@@ -43,7 +43,7 @@ define:
     username: admin
     password: 111111
   mysql:
-    write1:
+    write:
       url: jdbc:mysql://192.168.1.139:3306/yfApp?useUnicode=true&characterEncoding=UTF-8
       #url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
       #username: jucaipen
