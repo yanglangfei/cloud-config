@@ -44,24 +44,24 @@ define:
     password: 111111
   mysql:
     write:
-      url: jdbc:mysql://192.168.1.189:3306/lwSql?useUnicode=true&characterEncoding=UTF-8
+      url: jdbc:mysql://192.168.1.139:3306/yfApp?useUnicode=true&characterEncoding=UTF-8
       #url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
       #username: jucaipen
-      username: master
-      password: 111111
-      #password: jucaipen168
-    read1:
-      url: jdbc:mysql://192.168.1.189:3306/lwSql?useUnicode=true&characterEncoding=UTF-8
-      #url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
-      #username: jucaipen
-      username: reader
+      username: master1
       password: 123456
       #password: jucaipen168
-    read2:
-      url: jdbc:mysql://192.168.1.189:3306/lwSql?useUnicode=true&characterEncoding=UTF-8
+    read1:
+      url: jdbc:mysql://192.168.1.139:3306/yfApp?useUnicode=true&characterEncoding=UTF-8
       #url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
       #username: jucaipen
       username: reader1
+      password: 123456
+      #password: jucaipen168
+    read2:
+      url: jdbc:mysql://192.168.1.139:3306/yfApp?useUnicode=true&characterEncoding=UTF-8
+      #url: jdbc:mysql://121.40.227.121:3306/jucaipen?useUnicode=true&characterEncoding=utf8
+      #username: jucaipen
+      username: reader2
       password: 123456
       #password: jucaipen168
   paging:
