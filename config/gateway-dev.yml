@@ -11,8 +11,6 @@ define:
         enable: true
       ErrorFilter:
         enable: true
-
-define:
   limit:
     access: 50
 
