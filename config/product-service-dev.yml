@@ -51,8 +51,8 @@ define:
     read2:
       driverClassName: com.mysql.jdbc.Driver
       url: ${define.mysql.read2.url}
-      username: ${define.mysq2.read1.username}
-      password: ${define.mysq2.read1.password}
+      username: ${define.mysq.read2.username}
+      password: ${define.mysq.read2.password}
       initialSize: 5
       minIdle: 5
       maxActive: 20
