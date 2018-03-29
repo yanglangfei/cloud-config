@@ -97,3 +97,8 @@ spring:
     #sentinel:
      # master: master
       #nodes: 192.168.1.139:26379,192.168.1.139:36379,192.168.1.139:46379
+
+
+#log 配置
+logging:
+  file: D:\Logs\com\yf\user-service.log

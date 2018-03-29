@@ -11,3 +11,7 @@ define:
         enable: true
       ErrorFilter:
         enable: true
+
+#log 配置
+logging:
+  file: D:\Logs\com\yf\gateway.log
