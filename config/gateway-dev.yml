@@ -12,6 +12,11 @@ define:
       ErrorFilter:
         enable: true
 
+define:
+  limit:
+    access: 50
+
+
 #log 配置
 logging:
   file: D:\Logs\com\yf\gateway.log
