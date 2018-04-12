@@ -1,0 +1,15 @@
+define:
+  zuul:
+    filter:
+      RoutesFilter:
+        enable: true
+      BlacklistFilter:
+        enable: true
+      AccessLogFilter:
+        enable: true
+      ResponseLogFilter:
+        enable: true
+      ErrorFilter:
+        enable: true
+  limit:
+    access: 50

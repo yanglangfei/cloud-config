@@ -1,3 +1,0 @@
-#log 配置
-logging:
-  file: D:\Logs\com\yf\app.log
